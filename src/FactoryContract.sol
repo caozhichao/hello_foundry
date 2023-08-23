@@ -1,6 +1,7 @@
 pragma solidity ^0.8.13;
 
 import "./Counter.sol";
+import "@openzeppelin/contracts/utils/Create2.sol";
 contract FactoryContract {
 
   function createNewContract1() public returns(address){
