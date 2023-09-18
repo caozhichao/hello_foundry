@@ -36,5 +36,15 @@ contract FactoryContractTest is Test{
 
   }
 
+  function testCalculateAddr() public view{
+    address addr = fc.calculateAddr();
+    console.log(addr);
+  }
+  function testCreate2Assembly() public {
+    address addr = fc.create2Assembly();
+    console.log(addr);
+  }
+
+
 
 }

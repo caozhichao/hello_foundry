@@ -4,4 +4,16 @@ out = 'out'
 libs = ['lib']
 solc-version = "0.8.13"
 
+#remappings=[
+#  "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+#]
+
 # See more config options https://github.com/foundry-rs/foundry/tree/master/config
+
+
+[profile.0_4_x]
+src = 'src-0_4_x'
+out = 'out'
+libs = ['lib-0_4_x', 'lib']
+# optimizer = false
+solc_version = '0.4.18'
